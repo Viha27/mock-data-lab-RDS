@@ -6,7 +6,7 @@ import boto3
 
 ENDPOINT=""
 PORT="3306"
-USER="adm
+USER="admin"
 PASS="password"
 DBNAME="mockdatabase"
 
