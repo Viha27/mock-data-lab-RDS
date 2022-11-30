@@ -4,8 +4,9 @@ from collections import defaultdict
 from sqlalchemy import create_engine
 import boto3
 
-ENDPOINT=""
-PORT="3306"
+# Paste your recorded ENDPOINT and PORT in the variables below
+ENDPOINT="ENDPOINT"
+PORT="PORT"
 USER="admin"
 PASS="password"
 DBNAME="mockdatabase"
@@ -25,4 +26,4 @@ df_mock_data = pandas.DataFrame(mock_data)
 
 engine = create_engine(f'mysql+pymysql://{USER}:{PASS}@{ENDPOINT}:{PORT}/{DBNAME}', echo=False)
 
-df_mock_data.to_sql('use', con=engine,index=False)
+df_mock_data.to_sql('users', con=engine,index=False)
