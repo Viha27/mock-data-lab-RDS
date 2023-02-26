@@ -13,6 +13,7 @@ DBNAME="mockdatabase"
 
 fake = Faker()
 
+# defaultdict never raises a KeyError. It provides a default value for the key that does not exists.
 mock_data = defaultdict(list)
 
 for _ in range(2000):
